@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poo.core", "Poo.core\Poo.core.csproj", "{A3F95010-F78E-4C4D-838E-AF442F214C30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PooConcepts", "PooConcepts\PooConcepts.csproj", "{7EF3DD38-000C-41A8-8305-9ABE87BEF122}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3F95010-F78E-4C4D-838E-AF442F214C30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3F95010-F78E-4C4D-838E-AF442F214C30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3F95010-F78E-4C4D-838E-AF442F214C30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3F95010-F78E-4C4D-838E-AF442F214C30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EF3DD38-000C-41A8-8305-9ABE87BEF122}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EF3DD38-000C-41A8-8305-9ABE87BEF122}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EF3DD38-000C-41A8-8305-9ABE87BEF122}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EF3DD38-000C-41A8-8305-9ABE87BEF122}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6BAD7789-97FE-47C7-8D31-B3BCB4DB7F99}
+	EndGlobalSection
+EndGlobal
