@@ -82,12 +82,28 @@
 
         public Time Add(Time anotherT)
         {
-            int totalMilliseconds = this.ToMilliseconds() + anotherT.ToMilliseconds();
+            int millisecond = this.Millisecond + anotherT.Millisecond;
+            int second = this.Second + anotherT.Second;
+            int minute = this.Minute + anotherT.Minute;
+            int hour = this.Hour + anotherT.Hour;
 
-            int hour = totalMilliseconds / 3600000;
-            int minute = (totalMilliseconds % 3600000) / 60000;
-            int second = (totalMilliseconds % 60000) / 1000;
-            int millisecond = totalMilliseconds % 1000;
+            if (millisecond >= 1000)
+            {
+                second += millisecond / 1000;
+                millisecond %= 1000;
+            }
+
+            if (second >= 60)
+            {
+                minute += second / 60;
+                second %= 60;
+            }
+
+            if (minute >= 60)
+            {
+                hour += minute / 60;
+                minute %= 60;
+            }
 
             hour %= 24;
 
