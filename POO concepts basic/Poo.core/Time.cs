@@ -111,8 +111,13 @@
         }
         public bool IsOtherDay(Time anotherT)
         {
+            int totalMinutes = this.ToMinutes() + anotherT.ToMinutes();
+            int totalSeconds = this.ToSeconds() + anotherT.ToSeconds();
             int totalMilliseconds = this.ToMilliseconds() + anotherT.ToMilliseconds();
-            int totalHours = totalMilliseconds / 3600000;
+
+            double totalHours = totalMinutes / 60.0 +
+                (totalSeconds % 60) / 3600.0 +
+                (totalMilliseconds % 60000) / 3600000.0;
 
             return totalHours >= 24;
         }
